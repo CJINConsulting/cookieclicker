@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>lexisnexus</artifactId>
+    <artifactId>airelogic</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -74,6 +74,12 @@
             <artifactId>surefire-junit-platform</artifactId>
             <version>${surefire.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
