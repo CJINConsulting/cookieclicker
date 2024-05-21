@@ -7,6 +7,11 @@
     <list default="true" id="ac43ee15-fdaa-416d-9566-6a7b732ac65c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/GamePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/airelogic/steps/UISteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airelogic/steps/UISteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/gameplay.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/gameplay.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/start_game.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/start_game.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,7 @@
       <recent name="C:\Users\Colin\Projects\relx\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: gameplay">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Buying multiple factories should increase the cookie count">
     <configuration name="Feature: gameplay" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/gameplay.feature" />
@@ -56,25 +61,6 @@
       <module name="airelogic" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: gameplay" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: start_game" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/start_game.feature" />
-      <option name="GLUE" value="com.airelogic.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="airelogic" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: start_game" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -146,6 +132,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Existing games maintain your progress" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/start_game.feature" />
+      <option name="GLUE" value="com.airelogic.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="airelogic" />
+      <option name="NAME_FILTER" value="^Existing games maintain your progress$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Existing games maintain your progress$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Existing games maintain your progress" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="lexisnexus" />
       <method v="2">
@@ -161,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: gameplay" />
         <item itemvalue="Cucumber Java.Scenario: Buying multiple factories should increase the cookie count" />
+        <item itemvalue="Cucumber Java.Scenario: Existing games maintain your progress" />
+        <item itemvalue="Cucumber Java.Feature: gameplay" />
         <item itemvalue="Cucumber Java.Scenario: Buying a factory should cost $3" />
         <item itemvalue="Cucumber Java.Scenario: Clicking a cookie adds a cookie" />
-        <item itemvalue="Cucumber Java.Feature: start_game" />
       </list>
     </recent_temporary>
   </component>

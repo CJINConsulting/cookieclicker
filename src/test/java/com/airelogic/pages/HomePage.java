@@ -19,4 +19,8 @@ public class HomePage extends BasePage{
     public String getPlayerScore(String playerName) {
         return driver.findElement(By.cssSelector("a[href='/game/'" + playerName + "]")).getText();
     }
+
+    public WebElement getExistingGameLinkByName(String name) {
+        return driver.findElement(By.linkText(name));
+    }
 }

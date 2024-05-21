@@ -9,7 +9,7 @@ import java.util.List;
 
 public class GamePage extends BasePage{
 
-    @FindBy(css = "a[href='Cookie Clicker!']")
+    @FindBy(xpath = "//a[text()='Cookie Clicker!']")
     public WebElement homepageLink;
     @FindBy(id = "cookies")
     public WebElement cookieCounter;

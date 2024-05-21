@@ -1,4 +1,4 @@
-Feature: Use the job search functionality
+Feature: In-game functionality
 
   Background:
     Given I am on the cookie clicker homepage

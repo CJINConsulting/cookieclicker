@@ -1,4 +1,4 @@
-Feature: Use the job search functionality
+Feature: Pre-game user behaviour
 
   Background:
     Given I am on the cookie clicker homepage
@@ -40,3 +40,13 @@ Feature: Use the job search functionality
       | 256         |
       | 257         |
       | 1000        |
+
+  Scenario: Existing games maintain your progress
+    Given I choose a random name
+    And I start a new game
+    And I click 10 cookies
+    And I sell 4 cookies
+    And I go back to the homepage
+    When I select my existing game from the high score table
+    Then my cookie count should be 6
+    And my money total should be 1

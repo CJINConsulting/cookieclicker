@@ -161,10 +161,20 @@ public class UISteps {
         WebDriverWait wait;
         wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         int cookieCount = gamePage.getCookieCount();
-        for(int i = 0; i < 10 ; i++) {
+        for(int i = 0; i < 3 ; i++) {
             System.out.println("checking cookie count is: " + cookieCount);
             wait.until(ExpectedConditions.textToBePresentInElement(gamePage.cookieCounter, String.valueOf(cookieCount)));
             cookieCount += cookieCountSpeed;
         }
+    }
+
+    @And("I go back to the homepage")
+    public void iGoBackToTheHomepage() {
+        gamePage.homepageLink.click();
+    }
+
+    @When("I select my existing game from the high score table")
+    public void iSelectMyExistingGameFromTheHighScoreTable() {
+        homePage.getExistingGameLinkByName(savedName).click();
     }
 }

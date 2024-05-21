@@ -38,7 +38,8 @@ In the real world, we would be able to explore, ask questions, and expand furthe
 - There is no help documentation to understand the rules and config for the game.
   - Even assuming a base understanding of the game type, we don't know how much the cookies cost, or the impact of factories
 - The game URLs seem to use the full username provided. May be a better experience to use something like a game ID so the URLs don't get too big.
-
+- I added some steps around checking the factory production speed. They seemed to work fine but then showed some signs of flakiness.
+  - Will need to re-assess how that logic checks the count
 ### New Game
 - The game allows you to start without entering a name value
   - This name value is used as a link in the high score records. If no name is entered, there's no way to continue that game via the UI.
@@ -97,6 +98,8 @@ I didn't think these were obvious issues, but they were worth asking in case the
   - How is this game going to compare to the example and the wiki in the future?
 
 ## Future Tests
+
+### Existing Game
 The functionality described below is based on features that are described in the documentation. 
 They don't yet exist in our app, but may need to be considered in the future.
 
