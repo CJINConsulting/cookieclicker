@@ -37,26 +37,32 @@ In the real world, we would be able to explore, ask questions, and expand furthe
 ### General
 - There is no help documentation to understand the rules and config for the game.
   - Even assuming a base understanding of the game type, we don't know how much the cookies cost, or the impact of factories
+- The game URLs seem to use the full username provided. May be a better experience to use something like a game ID so the URLs don't get too big.
 
 ### New Game
 - The game allows you to start without entering a name value
   - This name value is used as a link in the high score records. If no name is entered, there's no way to continue that game via the UI.
   - Also allows entering the name as a space character, which creates a new record on the high score page, but also has no link to continue the game
 - The name field allows names without alphanumeric characters
+  - https://colin-piper-2024-05-20.cookieclickertechtest.airelogic.com/game/1232131
 - The name field doesn't display accented characters correctly on the game page or the high score page
     - Example: àáâãäåçèéêëìíîðñòôõöö shows as ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    - https://colin-piper-2024-05-20.cookieclickertechtest.airelogic.com/game/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD
 - The name field doesn't display some special characters correctly:
   - These characters (‘“/£) display as "ï¿½" 
   - Forward slashes "/" are treated as a space e.g. "Joh/n" is displayed as "Joh n"
+  - https://colin-piper-2024-05-20.cookieclickertechtest.airelogic.com/game/%EF%BF%BD%20%EF%BF%BD%20%60%20%7C%20/%20%5C%20%2C%20%3B%20%3A%20%26%20%3C%20%3E%20%5E%20%2A%20%3F%20Tab
 - The name field reduces multiple internal spaces to 1. E.g. "Joh  n" is updated to "Joh n" 
+  - https://colin-piper-2024-05-20.cookieclickertechtest.airelogic.com/game/Joh%20%20n
 - When starting a new game, if the new user name matches an existing name on the high score table, it overwrites the records
   - This appears to be undesired behaviour, as you can resume a cookie run by clicking on the username link in the high score table
 
 ### High Scores
-- Entering long names distorts the high score table so that the scores are no longer visible
+- Entering long names distorts the high score table so that the scores are hard to check
   - the name string appears to wrap if it exceeds 278 chars
-- The high score table is hard to read and match up scores when there are excessively long names
+  - https://colin-piper-2024-05-20.cookieclickertechtest.airelogic.com/game/Accusantium%20reprehenderit%20quae%20consequuntur%20cumque%20ut%20rerum.Nostrum%20quos%20ab%20libero%20laboriosam.Provident%20at%20magni%20hic%20aperiam.Dicta%20et%20magnam.Vero%20aut%20et%20perspiciatis%20vel%20exercitationem%20cum.In%20omnis%20quam.Quasi%20alias%20sint%20enim%20voluptas%20impedit%20omnis%20quae.Asperiores%20neque%20numquam%20voluptatibus%20minus.Necessitatibus%20voluptatibus%20consequuntur.Ipsum%20tenetur%20sed%20veritatis%20hic%20quae.Aliquid%20excepturi%20qui%20commodi%20sunt%20et%20suscipit.Incidunt%20tenetur%20nisi.Aperiam%20incidunt%20consequatur.Commodi%20est%20blanditiis%20suscipit%20saepe%20voluptatibus.Non%20non%20optio%20non%20explicabo%20atque%20rerum.Atque%20est%20qui.Quia%20tempore%20laudantium%20placeat.Possimus%20quia%20eaque%20nisi%20id%20perspiciatis%20sit%20exercitationem.Nulla%20sed%20atque%20laboriosam%20expedita%20consectetur%20nostrum%20sunt.Quisquam%20quis%20doloribus%20recusandae%20rem%20porro%20ea.Impedit%20quae%20eos%20et%20qui%20voluptatem%20ex.Qui%20voluptas%20quis%20natus.Aut%20hic%20ut%20accusamus%20omnis%20ducimus%20illo%20unde.Vitae%20facilis%20quia.Hic%20voluptatem%20perspiciatis%20in%20voluptas.Sapiente%20sed%20asperiores%20error%20rem.Optio%20suscipit%20tempor
 - The table is not sorted by highest score descending. Most high score tables rank the best scores
+  - https://colin-piper-2024-05-20.cookieclickertechtest.airelogic.com/
 
 ### Gameplay
 - Clicking sell cookies button with no value, or a non-numeric value gives no response to say it's invalid
