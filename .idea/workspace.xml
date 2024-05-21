@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac43ee15-fdaa-416d-9566-6a7b732ac65c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/GamePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/GamePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airelogic/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/airelogic/steps/UISteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/airelogic/steps/UISteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/gameplay.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/gameplay.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/start_game.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/start_game.feature" afterDir="false" />
-    </list>
+    <list default="true" id="ac43ee15-fdaa-416d-9566-6a7b732ac65c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -106,6 +106,7 @@ public class UISteps {
     @And("I click a cookie")
     public void iClickACookie() {
         gamePage.clickCookie.click();
+        gamePage.isClickable(gamePage.clickCookie);
     }
 
     @And("I click {int} cookies")
